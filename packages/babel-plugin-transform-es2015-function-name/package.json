@@ -11,9 +11,15 @@
   "dependencies": {
     "babel-helper-function-name": "^6.4.0",
     "babel-types": "^6.4.0",
-    "babel-runtime": "^5.0.0"
+    "babel-runtime": "^5.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-helper-plugin-test-runner": "^6.3.13"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
