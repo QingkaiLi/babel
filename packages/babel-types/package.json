@@ -12,6 +12,12 @@
     "babel-traverse": "^6.7.2",
     "esutils": "^2.0.2",
     "lodash": "^3.10.1",
-    "to-fast-properties": "^1.0.1"
-  }
+    "to-fast-properties": "^1.0.1",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
