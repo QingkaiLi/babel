@@ -11,6 +11,12 @@
     "babel-traverse": "^6.7.0",
     "babel-messages": "^6.6.5",
     "babel-template": "^6.7.0",
-    "babel-types": "^6.7.0"
-  }
+    "babel-types": "^6.7.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
