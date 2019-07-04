@@ -8,6 +8,12 @@
   "dependencies": {
     "babel-helper-explode-assignable-expression": "^6.6.5",
     "babel-runtime": "^5.0.0",
-    "babel-types": "^6.6.5"
-  }
+    "babel-types": "^6.6.5",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
