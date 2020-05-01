@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - babel-types > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
+    - babel-traverse > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
+    - babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
+    - babel-helper-bindify-decorators > babel-types > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
+    - babel-helper-bindify-decorators > babel-traverse > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
+    - babel-helper-bindify-decorators > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:33:33.101Z'
