@@ -12,6 +12,12 @@
     "babel-plugin-transform-class-properties": "^6.3.13",
     "babel-plugin-transform-decorators": "^6.3.13",
     "babel-plugin-transform-export-extensions": "^6.3.13",
-    "babel-preset-stage-2": "^6.3.13"
-  }
+    "babel-preset-stage-2": "^6.3.13",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
